@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom"
 import Home from "./pages/home/Home"
 import Create from "./pages/create/Create"
 import Search from "./pages/search/Search"
-import Recepie from "./pages/recepie/Recepie"
+import Recipe from "./pages/recepie/Recipe"
 import Navbar from "./Components/Navbar"
 function App() {
   return (
@@ -20,8 +20,8 @@ function App() {
           <Route path="/search">
             <Search />
           </Route>
-          <Route path="/recepie">
-            <Recepie />
+          <Route path="/recipe/:id">
+            <Recipe />
           </Route>
         </Switch>
       </BrowserRouter>
